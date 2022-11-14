@@ -27,7 +27,20 @@ namespace Stopwatch
             if(time == 0)
                 System.Environment.Exit(0);
 
-            Start(time * multiplier);
+            PreStart(time * multiplier);
+
+        }
+
+        static void PreStart(int time) { 
+            Console.Clear();
+            Console.WriteLine("Ready...");
+            Thread.Sleep(1000);
+            Console.WriteLine("Set...");
+            Thread.Sleep(1000);
+            Console.WriteLine("GO!!!");
+            Thread.Sleep(1500);
+
+            Start(time);
 
         }
 
