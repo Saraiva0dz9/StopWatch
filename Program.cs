@@ -11,6 +11,7 @@ namespace Stopwatch
 
         static void Menu() { 
             Console.Clear();
+            Console.WriteLine("Olá, Seja bem vindo!!");
             Console.WriteLine("S = Segundo => 10s = 10 sgundos");
             Console.WriteLine("M = Minuto => 1m = 1 minuto");
             Console.WriteLine("0 = Sair");
@@ -59,6 +60,8 @@ namespace Stopwatch
             
             Console.Clear();
             Console.WriteLine("Stopwatch finalizado");
+            Thread.Sleep(1500);
+            Console.WriteLine("Finish!!");
             Thread.Sleep(2500);
             Menu();
         }
